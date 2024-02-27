@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Company Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<body>
+    <header>
+        <img src="" alt="Logo">
+        <ul class="navigation">
+            <li>Home</li>
+            <li>Our Profile</li>
+            <li>Message Us</li>    
+        </ul>
+    </header>
+
+    <div class="home">
+        <p>Hi <span id="visitor-name">-</span>, welcome</p>
+        <p>Ini adalah website latihan pertama</p>
+    </div>
+    
+    <div class="our-office">
+        <div>
+            <div class="circle-image">
+            </div>
+            <h5>Jakarta</h5>
+        </div>
+        <div>
+            <div class="circle-image" style="background-image: url('assets/');">
+            </div>
+            <h5>Bandung</h5>
+        </div>
+        <div>
+            <div class="circle-image">
+            </div>
+            <h5>Surabaya</h5>
+        </div>
+    </div>
+
+    <div class="inquiry-box">
+        <form class="inquiry-form">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name"></label>
+
+            <label for="dob">Tanggal Lahir:</label>
+            <input type="date" id="dob" name="dob"></label>
+
+            <label for="gender">Jenis Kelamin</label>
+            <input type="radio" id="male" name="male" value="Laki-laki" />
+            <label for="male">Laki-Laki</label><br />
+
+            <input type="radio" id="female" name="female" value="Permepuan" />
+            <label for="female">Perempuan</label><br />
+            
+            <!-- <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select> -->
+            
+            
+            <label for="message">Pesan:</label>
+            <input type="text" id="message" name="message"></label>
+
+            </form>
+            <div class="output">
+                <!--add output here-->
+            </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
