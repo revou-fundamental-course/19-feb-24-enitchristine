@@ -13,19 +13,21 @@
 
 
 <body>
+
     <header>
-        <img src="" alt="Logo">
-        <ul class="navigation">
-            <li>Home</li>
-            <li>Our Profile</li>
-            <li>Message Us</li>    
-        </ul>
+    <img src="" alt="Logo">
+        <nav class="container">
+            <div><a href="#">Home</a></div>
+            <div><a href="#">Our Profile</a></div>
+            <div><a href="#">Message Us</a></div>
+        </nav>
     </header>
 
     <div class="home">
         <p>Hi <span id="visitor-name">-</span>, welcome</p>
         <p>Ini adalah website latihan pertama</p>
     </div>
+    
     
     <div class="our-office">
         <div>
@@ -46,7 +48,7 @@
     </div>
 
     <div class="inquiry-box">
-        <form class="inquiry-form">
+        <form class="user-form" name="user-form">
             <label for="name">Nama:</label>
             <input type="text" id="name" name="name"></label>
 
@@ -57,7 +59,7 @@
             <input type="radio" id="male" name="male" value="Laki-laki" />
             <label for="male">Laki-Laki</label><br />
 
-            <input type="radio" id="female" name="female" value="Permepuan" />
+            <input type="radio" id="female" name="female" value="Perempuan" />
             <label for="female">Perempuan</label><br />
             
             <!-- <select id="gender">
@@ -69,9 +71,17 @@
             <label for="message">Pesan:</label>
             <input type="text" id="message" name="message"></label>
 
+            <button type="button" id="send-submit">Submit</button>
+
             </form>
             <div class="output">
                 <!--add output here-->
+                <p id="out-name"></p><br>
+                <p id="out-dob"></p><br>
+                <p id="out-gender"></p><br>
+                <p id="out-message"></p><br>
+                <p></p>
+                <p></p>
             </div>
     </div>
 

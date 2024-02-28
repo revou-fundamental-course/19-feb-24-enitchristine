@@ -9,13 +9,20 @@ header{
     padding: 20px;
 }
 
-.navigation{
-    list-style-type: none;
+.container{
+    border: 5px;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.navigation li{
-    display: inline;
+.container > div {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid grey;
+    margin: 2px;
 }
+
 
 .our-office{
     display: flex;
@@ -44,4 +51,11 @@ header{
 
 .output{
     border: 2px solid black;
+}
+
+@media only screen and (max-width:480px) {
+    header{ /*- should be /container -*/
+        flex-direction: column;
+    }
+    
 }
