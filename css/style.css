@@ -27,6 +27,11 @@ header{
 .our-office{
     display: flex;
     justify-content: space-around;
+    align-content: center;
+}
+
+h5{
+    text-align: center;
 }
 
 .circle-image{
@@ -37,20 +42,34 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
 }
 
-.inquiry-box{
+.message-us {
     display:flex;
+    flex-direction: row;
     justify-content: space-around;
 }
 
-.inquiry-form{
+.message-us > * {
+    padding: 5%;
+}
+
+.user-form{
     display:flex;
     flex-direction: column;
 }
 
 .output{
     border: 2px solid black;
+    width:250px; /* or whatever width you want. */
+    max-width:250px; /* or whatever width you want. */
+    display: inline-block;
+}
+
+footer > p {
+    display: flex;
+    justify-content: flex-end;
 }
 
 @media only screen and (max-width:480px) {
