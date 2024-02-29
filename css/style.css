@@ -62,14 +62,19 @@ h5{
 
 .output{
     border: 2px solid black;
-    width:250px; /* or whatever width you want. */
-    max-width:250px; /* or whatever width you want. */
+    width:250px; 
+    max-width:250px; 
     display: inline-block;
 }
 
 footer > p {
     display: flex;
     justify-content: flex-end;
+}
+
+header img[src="assets/logo.jpg"]{
+    width: 20%;
+    height: auto;
 }
 
 @media only screen and (max-width:480px) {
