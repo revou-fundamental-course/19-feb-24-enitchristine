@@ -1,5 +1,12 @@
 globalThis
 
+function outputUserForm(name, dob, gender, message){
+    document.getElementById("out-name").innerHTML=name;
+    document.getElementById("out-dob").innerHTML=dob;
+    document.getElementById("out-gender").innerHTML=gender;
+    document.getElementById("out-message").innerHTML=message;
+}
+
 function genderInputCheck(maleChecked,femaleChecked){
     // check if none or both radio buttons are entered
     if ((maleChecked&&femaleChecked)||(!maleChecked&&!femaleChecked)){
@@ -33,14 +40,20 @@ function validateForm(){
     }
     else{
         //warning to choose one
+        alert("Pilih salah satu Jenis Kelamin.");
+        return false;
     }
 
-    if ((name=="")||(dob=="")||(message=="")||(gender=="")){
+    if ((name=="")||(dob=="")||(gender=="")||(message=="")){
         // sned error message, return false
-        console.log("empty field(s)")      
+        alert("Form tidak komplit. Harap isi dengan benar.");
+        return false;     
     }
     else{
-        // putput all the info, return true
+        // output all the info, return true
+        outputUserForm(name, dob, gender, message);
+
+        return true;
     }
 
 }
