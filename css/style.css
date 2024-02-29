@@ -83,3 +83,8 @@ header img[src="assets/logo.jpg"]{
     }
     
 }
+
+.our-location{
+    border-radius: 5px; 
+    /* testing if git uses the correct email */
+}

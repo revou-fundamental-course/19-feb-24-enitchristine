@@ -83,6 +83,6 @@ function showSlide(n){
 
 replaceName();
 
-const slideInterval = setInterval(()=> nextSlide(1),1000);
+const slideInterval = setInterval(()=> nextSlide(1),1000);git 
 
 document.getElementById("send-submit").addEventListener("click",()=>validateForm())
