@@ -47,20 +47,21 @@
         </div>
     </div>
 
-    <div class="inquiry-box">
+    <div class="message-us">
         <form class="user-form" name="user-form">
             <label for="name">Nama:</label>
-            <input type="text" id="name" name="name"></label><br>
+            <input type="text" id="name" name="name"></label>
 
             <label for="dob">Tanggal Lahir:</label>
-            <input type="date" id="dob" name="dob"></label><br>
+            <input type="date" id="dob" name="dob"></label>
 
-            <label for="gender">Jenis Kelamin</label>
-            <input type="radio" id="male" name="male" value="Laki-laki" />
+            <p class="gender-form">
+            <label for="gender">Jenis Kelamin:</label>
+            <input type="radio" id="male" name="male" value="male" />
             <label for="male">Laki-Laki</label>
-            <input type="radio" id="female" name="female" value="Perempuan" />
-            <label for="female">Perempuan</label><br />
-            
+            <input type="radio" id="female" name="female" value="female" />
+            <label for="female">Perempuan</label>
+            </p>
             <!-- <select id="gender">
                 <option value="male">Male</option>
                 <option value="female">Female</option>
@@ -68,21 +69,23 @@
             
             
             <label for="message">Pesan:</label>
-            <input type="text" id="message" name="message"></label><br>
+            <input type="text" id="message" name="message"></label>
 
             <button type="button" id="send-submit">Submit</button>
 
-            </form>
-            <div class="output">
+        </form>
+        <div class="output">
                 <!--add output here-->
-                <p id="out-name"></p><br>
-                <p id="out-dob"></p><br>
-                <p id="out-gender"></p><br>
-                <p id="out-message"></p><br>
-                <p></p>
-                <p></p>
-            </div>
+                <p>Nama: <span id="out-name"></span></p><br>
+                <p>Tanggal Lahir: <span id="out-dob"></span></p><br>
+                <p>Jenis Kelamin: <span id="out-gender"></span></p><br>
+                <p>Pesan: <span id="out-message"></span></p><br>
+        </div>
     </div>
+
+    <footer>
+        <p>Created by RevoU 2024</p>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
