@@ -24,10 +24,19 @@ header{
 }
 
 
-.our-office{
+.our-location{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-content: center;
+    padding: 5%;
+}
+
+.location-photos{
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    align-items: center;
 }
 
 h5{
@@ -35,8 +44,8 @@ h5{
 }
 
 .circle-image{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border: 2px solid black;
     border-radius: 50%;
     background-size: cover;
@@ -47,13 +56,20 @@ h5{
 
 .message-us {
     display:flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.form-section{
+    display:flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.message-us > * {
-    padding: 5%;
+.form-section > *{
+    padding:10%;
 }
+
 
 .user-form{
     display:flex;
@@ -65,6 +81,7 @@ h5{
     width:250px; 
     max-width:250px; 
     display: inline-block;
+    padding: 1%
 }
 
 footer > p {
@@ -73,18 +90,44 @@ footer > p {
 }
 
 header img[src="assets/logo.jpg"]{
-    width: 20%;
+    width: 30%;
     height: auto;
 }
 
 @media only screen and (max-width:480px) {
-    header{ /*- should be /container -*/
+
+    header {
+        flex-direction: column;
+    }
+
+    header img[src="assets/logo.jpg"]{
+        width: 50%;
+        height: auto;
+    }
+    .container{ /*- should be /container -*/
+        flex-direction: column;
+    }
+
+    .location-photos{
         flex-direction: column;
     }
     
+    .form-section{
+        flex-direction: column;
+    }
+
+    .form-section > *{
+        padding:7%;
+    }
 }
 
-.our-location{
-    border-radius: 5px; 
-    /* testing if git uses the correct email */
+
+.banner img{
+    object-fit: cover;
+    width: 100%;
+    height: 578px;
+}
+
+.home {
+    padding: 5%;
 }

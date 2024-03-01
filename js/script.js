@@ -17,7 +17,7 @@ function genderInputCheck(maleChecked,femaleChecked){
 
 }
 function replaceName(){
-    let name = prompt("Siapa nama anda?","pengunjung");
+    let name = prompt("Siapa nama anda?","Pengunjung");
     document.getElementById("visitor-name").innerHTML=name;
 }
 
@@ -83,6 +83,6 @@ function showSlide(n){
 
 replaceName();
 
-const slideInterval = setInterval(()=> nextSlide(1),1000);git 
+const slideInterval = setInterval(()=> nextSlide(1),1000);
 
 document.getElementById("send-submit").addEventListener("click",()=>validateForm())
